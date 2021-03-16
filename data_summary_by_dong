@@ -1,0 +1,65 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPxRj/dFNiRUibZZbPTkQtP",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Note-YH/Hands-ON-ML-2nd-Edition/blob/main/data_summary_by_dong\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "gBa5MxqaI6U2"
+      },
+      "source": [
+        "import numpy as np\r\n",
+        "import pandas as pd\r\n",
+        "\r\n",
+        "pd.options.display.max_rows = 1000000 \r\n",
+        "\r\n",
+        "%matplotlib inline\r\n",
+        "import matplotlib\r\n",
+        "import matplotlib as mpl\r\n",
+        "import matplotlib.pyplot as plt\r\n",
+        "mpl.rc('axes', labelsize=12)\r\n",
+        "mpl.rc('xtick', labelsize=8)\r\n",
+        "mpl.rc('ytick', labelsize=8)\r\n",
+        "\r\n",
+        "\r\n",
+        "!apt -qq -y install fonts-nanum > /dev/null\r\n",
+        " \r\n",
+        "import matplotlib.font_manager as fm\r\n",
+        " \r\n",
+        "fontpath = '/usr/share/fonts/truetype/nanum/NanumBarunGothic.ttf'\r\n",
+        "font = fm.FontProperties(fname=fontpath, size=10)\r\n",
+        "fm._rebuild()\r\n",
+        " \r\n",
+        "# 그래프에 retina display 적용\r\n",
+        "%config InlineBackend.figure_format = 'retina'\r\n",
+        " \r\n",
+        "# Colab 의 한글 폰트 설정\r\n",
+        "plt.rc('font', family='NanumBarunGothic') "
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
